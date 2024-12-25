@@ -1,0 +1,24 @@
+import pandas as pd
+
+
+df_excel = pd.read_excel('Книга1.xlsx')
+
+print(df_excel.head())
+
+print(df_excel.info())
+
+fifth_row = df.iloc[4]
+
+print(fifth_row)
+
+#2
+import pandas as pd
+
+data = {
+    'Column1': ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'],
+    'Column2': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+}
+df = pd.DataFrame(data)
+
+last_five_rows = df.tail(5)
+print(last_five_rows)
